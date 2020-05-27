@@ -1,5 +1,32 @@
+
+body {
+        overflow: hidden;
+
+    height: 90%;
+}
+.Content {
+    padding-left: 15px;
+    text-align: justify;
+
+}
+.Name {
+    line-height: 0px;
+    font-size: 13px;
+    margin: 3px;
+}
+
  h1 {
 	font-family: 'Arial Black', Gadget, sans-serif;
+
+
+ }
+ h2 {
+    font-family: 'Arial Black', Gadget, sans-serif;
+
+
+ }
+ h3 {
+    font-family: 'Arial Black', Gadget, sans-serif;
 
 
  }
@@ -7,13 +34,20 @@ p {
 	font-family: Arial, sans-serif;
 	cursor:text;
 }
- main {
+a {
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+main {
     margin: auto;
     width: 55%;
    	margin-top: auto;
 
- }
-  .Bar {
+}
+
+.Bar {
     background-color: #ffd633;
     border-left: 3px solid #ffcc00;
 
@@ -27,8 +61,24 @@ p {
 
  }
 
+main .main {
+    margin: auto;
+    margin-left: 150px;
+    margin-top: 30px;
+    width: 500px;
+    height: 30px;
+    padding-right: 10px;
+    overflow: auto;
+
+}
+
 main article {
 
+    
+}
+main article h2 {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    line-height: 10px;
 
     
 }
@@ -45,6 +95,7 @@ a:link:active, a:visited:active {
     color: black;
     transform: scale(1.1 , 1.1);  	
 }
+
 .button {
 	background-color: #ffcc00;
     border: none;
@@ -96,4 +147,39 @@ button:focus
  	text-align: right;
 	float: right;
 
+}
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 60%;
+    overflow: auto;
+    width: 140px;
+}
+nav h2 {
+    padding-left: 7px;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
 }
